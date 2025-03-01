@@ -1,81 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 p {
     font-size: 40px;
     font-family: "Poppins";
-    background-color: #000;
     color: #fff;
+    height: 100%;
 }
 
-.anim1 span:first-child {
-    animation: scaling1 10s infinite linear;
-    transition: 10s;
+body {
+    overflow: hidden;
+}
+
+.anim1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+.anim1 span {
+    display: inline-block;
+    color: transparent;
+    text-shadow: 0px 0px 0px #fd8300;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    font-size: 200px;
+}
+
+.anim1 span:nth-child(1) {
+    animation-name: disappearleft;
 }
 
 .anim1 span:nth-child(2) {
-    animation: scaling2 10s infinite 0.2s linear;
-    transition: 10s;
+    animation-name: disappearleft;
+    animation-delay: .3s;
 }
 
 .anim1 span:nth-child(3) {
-    animation: scaling3 10s infinite .4s linear;
-    transition: 10s;
+    animation-name: disappearight;
+    animation-delay: .6s;
 }
 
 .anim1 span:nth-child(4) {
-    animation: scaling4 10s infinite .6s linear;
-    transition: 10s;
+    animation-name: disappearleft;
+    animation-delay: .8s;
 }
 
 .anim1 span:nth-child(5) {
-    animation: scaling5 10s infinite .8s linear;
-    transition: 10s;
+    animation-name: disappearight;
+    animation-delay: 1s;
 }
 
-@keyframes scaling1 {
-    0% {
-        scale: 1;
-    }
-
-    100% {
-        scale: 1.8;
-    }
-}
-
-@keyframes scaling2 {
-    0% {
-        scale: 1;
-    }
-
-    100% {
-        scale: 1.8;
+@keyframes disappearleft {
+    50% {
+        transform: skew(90deg) translateY(-265%);
+        text-shadow: 0px 0px 50px;
+        opacity: 0;
     }
 }
 
-@keyframes scaling3 {
-    0% {
-        scale: 1;
-    }
-
-    100% {
-        scale: 1.8;
-    }
-}
-
-@keyframes scaling4 {
-    0% {
-        scale: 1;
-    }
-
-    100% {
-        scale: 1.8;
-    }
-}
-
-@keyframes scaling5 {
-    0% {
-        scale: 1;
-    }
-
-    100% {
-        scale: 1.8;
+@keyframes disappearight {
+    50% {
+        transform: skew(-168deg) translateY(-304%);
+        text-shadow: 0px 0px 50px;
+        opacity: 0;
     }
 }
