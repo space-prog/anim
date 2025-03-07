@@ -16,11 +16,12 @@ body {
 p {
     position: absolute;
     text-align: center;
-    top: 45%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 40px;
+    font-size: 100px;
     font-family: "Poppins";
+    z-index: 2;
 }
 
 .anim2 span {
@@ -29,48 +30,74 @@ p {
     width: 100px;
     height: 100px;
     background-color: #f3ff89;
-    animation-name: span;
-    animation-duration: 15s;
+    animation: span 10s infinite;
+    transition: all 10s ease;
+    rotate: 0deg;
 }
+
+.top {
+    top: -220px;
+}
+
 .anim2 span:nth-child(2) {
     left: 200px;
 }
 .anim2 span:nth-child(4) {
     left: 520px;
+    animation-delay: 0.2s;
 }
 .anim2 span:nth-child(5) {
     left: 860px;
+    animation-delay: 0.8s;
 }
 .anim2 span:nth-child(6) {
     left: 388px;
+    animation-delay: 1s;
 }
 .anim2 span:nth-child(7) {
     left: 745px;
+    animation-delay: 0.65s;
 }
 .anim2 span:nth-child(8) {
     left: 954px;
+    animation-delay: 0.2s;
 }
-.anim2 span:nth-child(9) {
+.anim2 span:nth-child(9), .anim2 span:nth-child(16) {
     left: 1200px;
+    animation-delay: 0.2s;
 }
-.anim2 span:nth-child(10) {
+.anim2 span:nth-child(10), .anim2 span:nth-child(15) {
     left: 1300px;
+    animation-delay: 1.2s;
 }
-.anim2 span:nth-child(11) {
+.anim2 span:nth-child(11), .anim2 span:nth-child(14) {
     left: 1754px;
+    animation-delay: 1.06s;
 }
-.anim2 span:nth-child(12) {
+.anim2 span:nth-child(12), .anim2 span:nth-child(13) {
     left: 1554px;
+    animation-delay: 0.2s;
 }
 
 @keyframes span {
-    from {
-        top: -120%;
-        rotate: 0deg;
+    0%{
+        transform: translateY(-120px);
     }
 
-    to {
-        bottom: -120px;
-        rotate: 360deg;
+    100% {
+        transform: translateY(1100px) rotate(360deg);
+        background-color: lightblue;
     }
+}
+
+.gold {
+    background-color: goldenrod;
+}
+
+.pink {
+    background-color: rgb(247, 157, 172);
+}
+
+.blue {
+    background-color: lightskyblue;
 }
