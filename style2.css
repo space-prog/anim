@@ -1,38 +1,76 @@
-* {
-    padding: 0;
-    margin: 0;
+.anim2 {
+    width: 100%;
+    height: 100%;
 }
 
-p {
-    font-size: 200px;
-    font-family: "Poppins";
-    color: #fff;
+.filter {
+    filter: blur(20px);
     height: 100%;
-    text-align: center;
 }
 
 body {
     overflow: hidden;
-    background: #000;
-}
-
-.anim2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     min-height: 100vh;
-    width: 100%;
 }
 
-.flex {
-    display: flex;
-}
-
-.anim2_span {
-    display: block;
+p {
     position: absolute;
-    width: 35px;
-    height: 35px;
-    background: #fff;
-    bottom: 0;
+    text-align: center;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-family: "Poppins";
+}
+
+.anim2 span {
+    top: -120px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #f3ff89;
+    animation-name: span;
+    animation-duration: 15s;
+}
+.anim2 span:nth-child(2) {
+    left: 200px;
+}
+.anim2 span:nth-child(4) {
+    left: 520px;
+}
+.anim2 span:nth-child(5) {
+    left: 860px;
+}
+.anim2 span:nth-child(6) {
+    left: 388px;
+}
+.anim2 span:nth-child(7) {
+    left: 745px;
+}
+.anim2 span:nth-child(8) {
+    left: 954px;
+}
+.anim2 span:nth-child(9) {
+    left: 1200px;
+}
+.anim2 span:nth-child(10) {
+    left: 1300px;
+}
+.anim2 span:nth-child(11) {
+    left: 1754px;
+}
+.anim2 span:nth-child(12) {
+    left: 1554px;
+}
+
+@keyframes span {
+    from {
+        top: -120%;
+        rotate: 0deg;
+    }
+
+    to {
+        bottom: -120px;
+        rotate: 360deg;
+    }
 }
