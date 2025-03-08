@@ -1,16 +1,8 @@
-.anim2 {
-    width: 100%;
-    height: 100%;
-}
-
-.filter {
-    filter: blur(20px);
-    height: 100%;
-}
-
 body {
+    position: relative;
     overflow: hidden;
     min-height: 100vh;
+    background-color: #000;
 }
 
 p {
@@ -22,82 +14,178 @@ p {
     font-size: 100px;
     font-family: "Poppins";
     z-index: 2;
+    color: #fff;
 }
 
-.anim2 span {
-    top: -120px;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: #f3ff89;
-    animation: span 10s infinite;
-    transition: all 10s ease;
-    rotate: 0deg;
+p span {
+    animation: letters 5s infinite;
+    transition: all 5s ease;
+    font-size: 72px;
+    position: relative;
+    display: inline-block;
 }
 
-.top {
-    top: -220px;
-}
-
-.anim2 span:nth-child(2) {
-    left: 200px;
-}
-.anim2 span:nth-child(4) {
-    left: 520px;
+p span:first-child {
     animation-delay: 0.2s;
 }
-.anim2 span:nth-child(5) {
-    left: 860px;
+
+p span:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+p span:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+p span:nth-child(4) {
     animation-delay: 0.8s;
 }
-.anim2 span:nth-child(6) {
-    left: 388px;
+
+p span:last-child {
     animation-delay: 1s;
 }
-.anim2 span:nth-child(7) {
-    left: 745px;
-    animation-delay: 0.65s;
-}
-.anim2 span:nth-child(8) {
-    left: 954px;
-    animation-delay: 0.2s;
-}
-.anim2 span:nth-child(9), .anim2 span:nth-child(16) {
-    left: 1200px;
-    animation-delay: 0.2s;
-}
-.anim2 span:nth-child(10), .anim2 span:nth-child(15) {
-    left: 1300px;
-    animation-delay: 1.2s;
-}
-.anim2 span:nth-child(11), .anim2 span:nth-child(14) {
-    left: 1754px;
-    animation-delay: 1.06s;
-}
-.anim2 span:nth-child(12), .anim2 span:nth-child(13) {
-    left: 1554px;
-    animation-delay: 0.2s;
+
+.square {
+    display: block;
+    position: absolute;
+    border-radius: 3px;
+    filter: blur(15px);
+    animation: square 10s infinite;
+    transition: all 5s ease;
 }
 
-@keyframes span {
-    0%{
-        transform: translateY(-120px);
+.square1, .square3, .square5, .square7 {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    transform: translate(0, 0) rotate(25deg);
+} 
+.square2, .square4, .square6, .square8 {
+    width: 50px;
+    height: 50px;
+    background-color: plum;
+    transform: translate(0, 0) rotate(35deg);
+} 
+.square9, .square11, .square13, .square15 {
+    width: 150px;
+    height: 150px;
+    background-color: purple;
+    transform: translate(0, 0) rotate(45deg);
+} 
+.square10, .square12, .square14, .square16 {
+    width: 75px;
+    height: 75px;
+    background-color: #fd8300;
+    transform: translate(0, 0) rotate(55deg);
+} 
+.square17, .square19, .square21, .square23 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    transform: translate(0, 0) rotate(65deg);
+} 
+.square18, .square20, .square22, .square24 {
+    width: 35px;
+    height: 35px;
+    background-color: yellowgreen;
+    transform: translate(0, 0) rotate(75deg);
+} 
+
+.square17, .square2, .square9, .square4, .square22, .square14, .square12, .square5 {
+    top: -20%;
+}
+.square10, .square18, .square13, .square8, .square23, .square19, .square6, .square7 {
+    top: -30%;
+}
+.square24, .square15, .square21, .square3, .square16, .square11, .square20, .square1 {
+    top: -40%;
+}
+.square17 {
+    left: 10%;
+}
+.square2 {
+    left: 20%;
+}
+.square9 {
+    left: 30%;
+}
+.square4 {
+    left: 40%;
+}
+.square22 {
+    left: 50%;
+}
+.square14 {
+    left: 60%;
+}
+.square12 {
+    left: 70%;
+}
+.square5 {
+    left: 80%;
+}
+
+
+.square10 {
+    left: calc(10%+5px);
+}
+.square18 {
+    left: calc(20%+5px);
+}
+.square13 {
+    left: calc(30%+5px);
+}
+.square8 {
+    left: calc(40%+5px);
+}
+.square23 {
+    left: calc(50%+5px);
+}
+.square19 {
+    left: calc(60%+5px);
+}
+.square16 {
+    left: calc(70%+5px);
+}
+.square7 {
+    left: calc(80%+5px);
+}
+
+
+.square24 {
+    left: calc(10%+15px);
+}
+.square15 {
+    left: calc(20%+15px);
+}
+.square21 {
+    left: calc(30%+15px);
+}
+.square3 {
+    left: calc(40%+15px);
+}
+.square6 {
+    left: calc(50%+15px);
+}
+.square16 {
+    left: calc(60%+15px);
+}
+.square20 {
+    left: calc(70%+15px);
+}
+.square1 {
+    left: calc(80%+15px);
+}
+
+.square1, .square10, 
+
+
+@keyframes letters {
+    0%, 100% {
+        transform: translateY(0px);
     }
-
-    100% {
-        transform: translateY(1100px) rotate(360deg);
-        background-color: lightblue;
+    50% {
+        transform: translateY(-50px);
     }
 }
 
-.gold {
-    background-color: goldenrod;
-}
-
-.pink {
-    background-color: rgb(247, 157, 172);
-}
-
-.blue {
-    background-color: lightskyblue;
-}
