@@ -92,7 +92,7 @@ p span:last-child {
 } 
 
 .square17, .square2, .square9, .square4, .square22, .square14, .square12, .square5 {
-    top: -20vh;
+    top: -39vh;
 }
 .square10, .square18, .square13, .square8, .square23, .square19, .square6, .square7 {
     top: -50vh;
@@ -178,33 +178,33 @@ p span:last-child {
 }
 
 .square1, .square10, .square5, .square14 {
-    animation: group1 15s linear alternate;
+    animation: group1 15s linear infinite alternate;
     animation-delay: 0.3s;
     opacity: 1;
     transition: all 5s ease;
 }
 .square8, .square22, .square12, .square6 {
-    animation: group1 15s linear alternate;
+    animation: group1 15s linear infinite alternate;
     animation-delay: 0.7s;
     opacity: 1;
 }
 .square2, .square23, .square9, .square21 {
-    animation: group1 15s linear alternate;
+    animation: group1 15s linear infinite alternate;
     animation-delay: 1s;
     opacity: 1;
 }
 .square17, .square3, .square20, .square15 {
-    animation: group1 15s linear alternate;
+    animation: group1 15s linear infinite alternate;
     animation-delay: 1.3s;
     opacity: 1;
 }
 .square4, .square7, .square13, .square19 {
-    animation: group1 15s linear alternate;
+    animation: group1 15s linear infinite alternate;
     animation-delay: 1.7s;
     opacity: 1;
 }
 .square18, .square11, .square24, .square16 {
-    animation: group1 15s linear alternate;
+    animation: group1 15s linear infinite alternate;
     animation-delay: 2.1s;
     opacity: 1;
 }
