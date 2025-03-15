@@ -50,7 +50,7 @@ p span:last-child {
     position: absolute;
     border-radius: 3px;
     filter: blur(15px);
-    animation: square 10s infinite;
+    animation: square 10s infinite alternate;
     transition: all 5s ease;
 }
 
@@ -95,10 +95,10 @@ p span:last-child {
     top: -20vh;
 }
 .square10, .square18, .square13, .square8, .square23, .square19, .square6, .square7 {
-    top: -30vh;
+    top: -50vh;
 }
 .square24, .square15, .square21, .square3, .square16, .square11, .square20, .square1 {
-    top: -40vh;
+    top: -70vh;
 }
 .square17 {
     left: 10%;
